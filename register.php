@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #3498db ;
+            background:rgb(44, 90, 122) ;
             padding: 40px;
         }
 
