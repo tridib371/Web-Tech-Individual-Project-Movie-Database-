@@ -8,9 +8,10 @@ if (!isset($_SESSION['user_id']) || !in_array($_SESSION['user_role'], ['general'
     exit;
 }
 
+
 $isPremium = $_SESSION['user_role'] === 'premium';
 
-// Handle search
+
 $search = $_GET['search'] ?? '';
 if ($search) {
     $stmt = $conn->prepare("SELECT * FROM movies WHERE title LIKE ? ORDER BY created_at DESC");
